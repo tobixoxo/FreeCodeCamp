@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background-color: green;}
+            .main-section {
+                background-color: rgb(27, 34, 24);
+                border-radius: 0.5%;
+                color: rgb(143, 179, 119);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id = "title" style="text-align: center; font-family: cursive;">SURVEY FORM</h1>
+        <div class = "main-section">
+        <p id = "description">a small survey for the better music reccomendations by us :) </p>
+        <form id="survey-form">
+            <label for="name" id = "name-label">name<br></label>
+            <input type ="text" id = "name" placeholder="enter your name"><br></input>
+            <label for= "email" id = "email-label">E-mail<br></label>
+            <input type = "email" id="email" placeholder= "enter your email"></input><br>
+            <label for = "number" id= "number-label">Age</label><br>
+            <input type = "number" id ="number" min="0" max="150" placeholder= "your age"></input><br>
+            
+            <label for="music">Choose your music taste:</label><br>
+            <select id="dropdown" name="genres">
+                <option value="lofi">lofi</option>
+                <option value="EDM">EDM</option>
+                <option value="rock">rock</option>
+                <option value="pop">pop</option>
+            </select><br>
+
+            <fieldset>
+                <legend>when do you study <br></legend>
+                <input type="radio" name = "time" value = "morning"></input>
+                <label >morning</label><br>
+                <input type = "radio" name = "time" value = "afternoon"></input>
+                <label>afternoon</label><br>
+                <input type = "radio" name = "time" value = "evening"></input>
+                <label>evening</label><br>
+                <input type = "radio" name = "time" value = "nights"></input>
+                <label>nights</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>what devices do you listen on </legend>
+                <label>Mobile</label>
+                <input type = "checkbox" name = "time" value="mobile"></input><br>
+                <label>Desktop</label>
+                <input type = "checkbox" name = "device" value = "desktop"></input><br>
+                <label>Car</label>
+                <input type = "checkbox" name = "device" value = "car"></input><br>
+            </fieldset>
+            
+            <textarea id="survey-form">enter your </textarea><br>
+
+            <input type="submit" id = "submit" ></input>
+        </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            header{
+                font-size: xx-large;
+            }
+            #navbar{
+                font-size: x-large;
+                background-color: rgb(177, 177, 177);
+                display: flex;
+                flex-direction: column;
+                padding-right: 20px;
+                position: fixed;
+                left : 0px;
+                top : 0px;
+                bottom: 0px;
+            }
+            #main-doc{
+                padding-left: 170px;
+            }
+            code{
+                margin: 15px 15px 15px 15px ;
+                background-color: rgb(219, 216, 216);
+                font-size: larger;
+                align-content: center;
+                color: rgb(0, 0, 0);
+                padding: 3px 3px 3px 3px;
+            }
+            pre{
+                margin: 15px 15px 15px 15px ;
+                background-color: rgb(219, 216, 216);
+                font-size: larger;
+                align-content: center;
+                color: rgb(0, 0, 0);
+                padding: 3px 3px 3px 3px;
+            }
+            @media only screen and (max-width: 600px) {
+                nav{
+                    background-color: blue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav id = "navbar">
+            <header>Python</header>
+            <a href="#Intro" class = "nav-link">Intro</a>
+            <a href = "#Getting_Started" class = "nav-link">Getting Started</a>
+            <a href = "#Syntaxes" class = "nav-link">Syntaxes</a>
+          
+            <a href = "#Comments" class = "nav-link">Comments</a>
+            <a href = "#Variable" class = "nav-link">Variable</a>
+            <a href = "#Data_Types" class = "nav-link">Data Types</a>
+            <a href = "#Conditionals" class = "nav-link">Conditionals</a>
+            <a href = "#Loops" class = "nav-link">Loops</a>
+            <a href = "#Reference" class = "nav-link">Reference</a>
+        </nav>
+        <main id= "main-doc">
+            <section class ="main-section" id="Intro">
+                <header >
+                Intro
+            </header>
+            <p>
+                Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+                It is used for:
+
+            <li>web development (server-side),</li>
+            <li>software development</li>
+            <li>mathematics,</li>
+            <li>system scripting.  </li> 
+            Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+            Python has a simple syntax similar to the English language.
+            Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+            Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
+            Python can be treated in a procedural way, an object-oriented way or a functional way.
+            </p></section>
+            
+            
+            <section class = "main-section" id = "Getting_Started">
+                <header >
+                    Getting Started
+                </header>
+                <p>Many PCs and Macs will have python already installed.
+                    To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):
+                </p>
+                <code>C:\Users\Your Name>python --version</code>
+                <p>If you find that you do not have Python installed on your computer, then you can download it for free from the following website:
+                    <a href="https://www.python.org/">here</a></p>
+            </section>
+            
+            
+            <section class = "main-section" id= "Syntaxes">
+                <header >Syntaxes
+                </header>
+                <p> Python syntax can be executed by writing directly in the Command Line:</p>
+                <pre>
+                    >>> print("Hello, World!")
+                    Hello, World!</pre>
+            </section>
+            <section id = "Comments" class= "main-section">
+            <header>
+                Comments
+            </header>
+            <p>Comments can be used to explain Python code.</p>
+
+                <p>can be used to make the code more readable.</p> 
+                
+                <p>Comments can be used to prevent execution when testing code.</p>
+                <P>Comments starts with a #, and Python will ignore them:</P>
+                <br><code>#This is a comment
+                    print("Hello, World!")</code>
+                <p>Multiline comments also exists in python</p>
+            
+            </section>
+
+            <section class = "main-section" id = "Variable">
+                <header >Variable</header>
+            <p>Python has no command for declaring a variable.
+                A variable is created the moment you first assign a value to it.</p>
+                <code>x = 5
+                    y = "John"
+                    print(x)
+                    print(y)</code>
+            <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+            <pre>x = 4       # x is of type int
+                
+                x = "Sally" # x is now of type str
+
+                print(x)</pre>
+            </section>
+
+            <section class = "main-section" id = "Data_Types">
+                <header >Data Types</header>
+            <p>In programming, data type is an important concept.
+                Variables can store data of different types, and different types can do different things.</p>
+            <p>Python has the following data types built-in by default, in these categories:</p>
+            <pre>
+                Text Type:	str
+                Numeric Types:	int, float, complex
+                Sequence Types:	list, tuple, range
+                Mapping Type:	dict
+                Set Types:	set, frozenset
+                Boolean Type:	bool
+                Binary Types:	bytes, bytearray, memoryview</pre>
+            </section>
+            
+            <section class = "main-section" id ="Conditionals">
+                <header >Conditionals</header>
+            <p>Python supports the usual logical conditions from mathematics:</p>
+            <li>Equals: a == b</li>
+            <li>Not Equals: a != b</li>
+            <li>Less than: a < b</li>
+            <li>Less than or equal to: a <= b</li>
+            <li>Greater than: a > b</u>
+            <li>Greater than or equal to: a >= b</li>
+            <p>Greater than or equal to: a >= b</p>
+            <pre>
+                a = 33
+                b = 200
+                if b > a:
+                    print("b is greater than a")
+            </pre>
+            <p>The elif keyword is pythons way of saying "if the previous conditions were not true, then try this condition".</p>
+            <pre>
+                a = 33
+                b = 33
+                if b > a:
+                    print("b is greater than a")
+                elif a == b:
+                    print("a and b are equal")
+            </pre>
+            <p>The else keyword catches anything which isn't caught by the preceding conditions.</p>
+            <pre>
+                a = 200
+                b = 33
+                if b > a:
+                  print("b is greater than a")
+                elif a == b:
+                  print("a and b are equal")
+                else:
+                  print("a is greater than b")</pre>
+
+            </section>
+
+            
+            <section id = "Loops" class="main-section">
+                <header >Loops</header>
+            <p>Python has two primitive loop commands:
+                while loops & for loops
+            </p>
+            <code>i = 1</code><br>
+            <code>while i < 6:</code><br>
+            <code>  print(i)</code><br>
+            <code>  i += 1</code>
+
+            <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+            <pre>
+                fruits = ["apple", "banana", "cherry"]
+                for x in fruits:
+                  print(x)</pre>
+            </section>
+            
+            <section id="Reference" class = "main-section">
+                <header >Reference</header>
+            <p>all the documentation from this page is taken from <a href="https://www.w3schools.com/python/default.asp">w3schools</a></p>
+            </section>
+            
+        </main>
+    </body>
+</html>
